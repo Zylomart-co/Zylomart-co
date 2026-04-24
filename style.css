@@ -1,20 +1,100 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
-header { background: linear-gradient(135deg, #ff3b30, #ff9500); text-align: center; padding: 2rem 1rem; }
-header h1 { font-size: 3rem; font-weight: 900; letter-spacing: -2px; }
-.tagline { font-size: 1.2rem; opacity: 0.9; font-weight: 600; }
-.hero { text-align: center; padding: 4rem 1rem; background: #111; }
-.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero p { font-size: 1.1rem; color: #aaa; margin-bottom: 2rem; }
-.btn, .btn-small { background: #ff3b30; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: 0.3s; }
-.btn:hover { background: #ff1a1a; transform: scale(1.05); }
-.btn-small { padding: 10px 20px; font-size: 0.9rem; }
-.products { padding: 3rem 1rem; max-width: 1200px; margin: auto; }
-.products h3 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-.card { background: #1a1a1a; border-radius: 15px; padding: 1rem; text-align: center; border: 1px solid #333; }
-.card img { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
-.card h4 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-.price { font-size: 1.5rem; color: #ff3b30; font-weight: bold; margin-bottom: 1rem; }
-.price span { font-size: 1rem; color: #666; text-decoration: line-through; margin-left: 10px; }
-footer { background: #000; text-align: center; padding: 2rem 1rem; color: #666; border-top: 1px solid #222; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 50px;
+}
+
+.overlay button {
+  padding: 12px 30px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.cat {
+  text-align: center;
+}
+
+.cat img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* PRODUCTS */
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
