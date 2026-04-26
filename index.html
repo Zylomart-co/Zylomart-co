@@ -1,83 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zylo Fashion</title>
-
-  <!-- CSS LINK -->
+  <title>ZyloMart</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- TOP BAR -->
+<div class="topbar">
+  FREE SHIPPING ON ORDERS OVER ₹999 | CALL: 8130593238
+</div>
+
+<!-- NAVBAR -->
 <header>
-  <div class="logo">ZYLO</div>
-  <nav>
-    <a href="#">Women</a>
-    <a href="#">Men</a>
-    <a href="#">Kids</a>
-    <a href="#">Beauty</a>
-  </nav>
+  <h1>ZyloMart</h1>
+  <input type="text" placeholder="Search products...">
+  <div class="nav-icons">
+    <span>Login</span>
+    <span>Cart (0)</span>
+  </div>
 </header>
 
-<!-- HERO -->
+<!-- MENU -->
+<nav>
+  <a href="#">MEN</a>
+  <a href="#">WOMEN</a>
+  <a href="#">TOPS</a>
+  <a href="#">BOTTOMS</a>
+  <a href="#">SALE</a>
+</nav>
+
+<!-- HERO SECTION -->
 <section class="hero">
-  <div class="overlay">
-    <h1>45% OFF EVERYTHING</h1>
-    <p>Use Code: THANKU45</p>
+  <div class="hero-text">
+    <h2>UP TO 70% OFF</h2>
+    <p>Trending Styles</p>
     <button>SHOP NOW</button>
   </div>
 </section>
 
-<!-- CATEGORIES -->
-<section class="categories">
-  <div class="cat">
-    <img src="https://via.placeholder.com/150">
-    <p>Women</p>
-  </div>
-  <div class="cat">
-    <img src="https://via.placeholder.com/150">
-    <p>Men</p>
-  </div>
-  <div class="cat">
-    <img src="https://via.placeholder.com/150">
-    <p>Kids</p>
-  </div>
-</section>
-
 <!-- PRODUCTS -->
-<section class="section">
-  <h2>Trending Products</h2>
+<section class="products" id="products"></section>
 
-  <div class="products">
-
-    <div class="card">
-      <img src="https://via.placeholder.com/200">
-      <p>Stylish Dress</p>
-      <p>₹999</p>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/200">
-      <p>Casual Shirt</p>
-      <p>₹799</p>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/200">
-      <p>Summer Top</p>
-      <p>₹599</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Zylo Fashion. All rights reserved.</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
