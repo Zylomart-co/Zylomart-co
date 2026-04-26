@@ -41,7 +41,15 @@ nav a {
 }
 
 /* Hero */
-
+.hero {
+  background: url('https://images.unsplash.com/photo-1521334884684-d80222895322') no-repeat center;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
 
 .hero h2 {
   font-size: 40px;
