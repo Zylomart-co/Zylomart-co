@@ -1,1 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
 
+/* Top bar */
+.topbar {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #111;
+  color: white;
+}
+
+header input {
+  width: 40%;
+  padding: 8px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #000;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
